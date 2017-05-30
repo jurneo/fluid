@@ -52,6 +52,12 @@ deploy:
     on:
       branch: develop
       condition: "$CC = gcc"
+  - provider: script
+    script: .travis/deploy.sh
+    skip_cleanup: true
+    on:
+      branch: doc
+      condition: "$CC = gcc"
 
 notifications:
   email: false
