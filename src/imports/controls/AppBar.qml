@@ -28,11 +28,8 @@ import Fluid.Controls 1.0 as FluidControls
 
    \brief Application tool bar.
  */
-ToolBar {
+Item {
     id: appBar
-
-    Material.elevation: toolbar ? 0 : elevation
-    Material.theme: toolbar ? toolbar.Material.theme : Material.Light
 
     /*!
        The back action to display to the left of the title in the action bar.
@@ -80,7 +77,7 @@ ToolBar {
        for custom purposes outside of a toolbar, this defaults to \c 3.
        Set to \c 0 if you don't want to overflow actions.
      */
-    property int maxActionCount: toolbar ? toolbar.maxActionCount : 3
+    property int maxActionCount: 3
 
     /*!
        The title displayed in the action bar. When used in a page, the title will
@@ -88,8 +85,6 @@ ToolBar {
        of changing this directly.
      */
     property alias title: titleLabel.text
-
-    property AppToolBar toolbar
 
     implicitHeight: Device.gridUnit
 

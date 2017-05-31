@@ -41,16 +41,14 @@ ToolBar {
     }
 
     function push(page) {
-        stack.push(page.appBar, {}, StackView.PushTransition)
-
-        page.appBar.toolbar = toolbar
-        toolbar.page = page
+        stack.push(page.appBar, {}, StackView.PushTransition);
+        page.appBar.parent = toolbar;
+        toolbar.page = page;
     }
 
     function replace(page) {
         stack.replace(page.appBar, {}, StackView.ReplaceTransition)
 
-        page.appBar.toolbar = toolbar
         toolbar.page = page
     }
 
