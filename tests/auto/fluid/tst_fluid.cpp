@@ -15,7 +15,7 @@
 #include <QtCore/QString>
 #include <QtTest/QtTest>
 
-#include <Fluid/DateUtils>
+#include "C:/workspace/apps/fluid/src/fluid/dateutils.h"
 
 using namespace Fluid;
 

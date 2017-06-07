@@ -34,5 +34,64 @@
         <file>qml/Pages/Navigation/NavDrawerPage.qml</file>
         <file>qml/Pages/Compound/OverlayPage.qml</file>
         <file>qml/Pages/Material/Search.qml</file>
+        <file>qml/controls/Action.qml</file>
+        <file>qml/controls/AlertDialog.qml</file>
+        <file>qml/controls/AppBar.qml</file>
+        <file>qml/controls/ApplicationWindow.qml</file>
+        <file>qml/controls/AppToolBar.qml</file>
+        <file>qml/controls/BaseListItem.qml</file>
+        <file>qml/controls/BodyLabel.qml</file>
+        <file>qml/controls/CaptionLabel.qml</file>
+        <file>qml/controls/Card.qml</file>
+        <file>qml/controls/CircleImage.qml</file>
+        <file>qml/controls/DialogLabel.qml</file>
+        <file>qml/controls/DisplayLabel.qml</file>
+        <file>qml/controls/FluidStyle.qml</file>
+        <file>qml/controls/HeadlineLabel.qml</file>
+        <file>qml/controls/Icon.qml</file>
+        <file>qml/controls/IconButton.qml</file>
+        <file>qml/controls/InfoBar.qml</file>
+        <file>qml/controls/InputDialog.qml</file>
+        <file>qml/controls/ListItem.qml</file>
+        <file>qml/controls/ListItemDelegate.qml</file>
+        <file>qml/controls/Loadable.qml</file>
+        <file>qml/controls/MenuItem.qml</file>
+        <file>qml/controls/NavigationDrawer.qml</file>
+        <file>qml/controls/NoiseBackground.qml</file>
+        <file>qml/controls/Object.qml</file>
+        <file>qml/controls/OverlayView.qml</file>
+        <file>qml/controls/Page.qml</file>
+        <file>qml/controls/PageStack.qml</file>
+        <file>qml/controls/Placeholder.qml</file>
+        <file>qml/controls/PlatformExtensions.qml</file>
+        <file>qml/controls/Showable.qml</file>
+        <file>qml/controls/Sidebar.qml</file>
+        <file>qml/controls/SmoothFadeImage.qml</file>
+        <file>qml/controls/SmoothFadeLoader.qml</file>
+        <file>qml/controls/Subheader.qml</file>
+        <file>qml/controls/SubheadingLabel.qml</file>
+        <file>qml/controls/Tab.qml</file>
+        <file>qml/controls/TabbedPage.qml</file>
+        <file>qml/controls/ThinDivider.qml</file>
+        <file>qml/controls/TitleLabel.qml</file>
+        <file>qml/controls/Units.qml</file>
+        <file>qml/core/Object.qml</file>
+        <file>qml/core/PlatformExtensions.qml</file>
+        <file>qml/core/Utils.qml</file>
+        <file>qml/effects/BoxShadow.qml</file>
+        <file>qml/effects/CircleMask.qml</file>
+        <file>qml/effects/Vignette.qml</file>
+        <file>qml/layouts/AutomaticGrid.qml</file>
+        <file>qml/layouts/ColumnFlow.qml</file>
+        <file>qml/material/ActionButton.qml</file>
+        <file>qml/material/BottomSheet.qml</file>
+        <file>qml/material/BottomSheetGrid.qml</file>
+        <file>qml/material/BottomSheetList.qml</file>
+        <file>qml/material/ElevationEffect.qml</file>
+        <file>qml/material/Ripple.qml</file>
+        <file>qml/material/SearchBar.qml</file>
+        <file>qml/material/Wave.qml</file>
+        <file>main.cpp</file>
+        <file>../../qml/Fluid/Controls/icons/navigation/check.svg</file>
     </qresource>
 </RCC>

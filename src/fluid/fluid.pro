@@ -11,6 +11,8 @@ CONFIG += liri_create_cmake
 HEADERS += \
     fluidglobal.h
 
+INCLUDEPATH += $$PWD ../../workspace/apps/fluid/src
+
 include(fluid.pri)
 
 QMAKE_PKGCONFIG_NAME = Fluid

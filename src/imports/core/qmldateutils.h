@@ -18,7 +18,8 @@
 #ifdef FLUID_LOCAL
     #include "../fluid/dateutils.h"
 #else
-    #include <Fluid/DateUtils>
+    //#include <Fluid/DateUtils>
+    #include "C:/workspace/apps/fluid/src/fluid/dateutils.h"
 #endif
 #include <QtCore/QObject>
 

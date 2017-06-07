@@ -14,8 +14,9 @@
 
 import QtQuick 2.0
 import QtQuick.Controls.Material 2.0
-import Fluid.Controls 1.0 as FluidControls
-import Fluid.Material 1.0 as FluidMaterial
+import "../../controls" as FluidControls
+import "../../material" as FluidMaterial
+
 
 Item {
     Image {
@@ -33,6 +34,10 @@ Item {
     FluidControls.OverlayView {
         id: overlayView
 
+        FluidControls.Units {
+            id : units
+        }
+
         width: 800
         height: 500
 
@@ -47,7 +52,7 @@ Item {
         }
 
         Row {
-            anchors { top: parent.top; right: parent.right; rightMargin: FluidControls.Units.largeSpacing }
+            anchors { top: parent.top; right: parent.right; rightMargin: units.largeSpacing }
             height: 48
             spacing: 24
 

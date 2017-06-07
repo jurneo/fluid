@@ -14,7 +14,7 @@
 
 import QtQuick 2.0
 import QtQuick.Controls 2.0
-import Fluid.Layouts 1.0 as FluidLayouts
+import "../../layouts" as FluidLayouts
 import "../.."
 
 Flickable {

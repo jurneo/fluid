@@ -1,0 +1,7 @@
+#ifndef QT_FLUID_MODULE_H
+#define QT_FLUID_MODULE_H
+#include <Fluid/FluidDepends>
+#include "dateutils.h"
+#include "fluidglobal.h"
+#include "fluidversion.h"
+#endif

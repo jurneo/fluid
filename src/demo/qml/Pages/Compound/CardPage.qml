@@ -14,7 +14,7 @@
 
 import QtQuick 2.0
 import QtQuick.Controls 2.0
-import Fluid.Controls 1.0
+import "../../controls"
 
 Item {
     Card {
@@ -22,6 +22,10 @@ Item {
         anchors.centerIn: parent
         width: 400
         height: 400
+
+        Units {
+            id : units
+        }
 
         Image {
             id: picture
@@ -45,9 +49,9 @@ Item {
                 left: parent.left
                 top: picture.bottom
                 right: parent.right
-                margins: Units.smallSpacing * 2
+                margins: units.smallSpacing * 2
             }
-            spacing: Units.smallSpacing * 2
+            spacing: units.smallSpacing * 2
 
             TitleLabel {
                 text: qsTr("Yosemite National Park")
@@ -64,7 +68,7 @@ Item {
             }
 
             Row {
-                spacing: Units.smallSpacing
+                spacing: units.smallSpacing
 
                 Button {
                     text: qsTr("Share")

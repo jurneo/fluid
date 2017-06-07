@@ -1,0 +1,14 @@
+QT.Fluid_private.VERSION = 0.10.0
+QT.Fluid_private.MAJOR_VERSION = 0
+QT.Fluid_private.MINOR_VERSION = 10
+QT.Fluid_private.PATCH_VERSION = 0
+QT.Fluid_private.name = Fluid
+QT.Fluid_private.module =
+QT.Fluid_private.libs = $$QT_MODULE_LIB_BASE
+QT.Fluid_private.includes = $$QT_MODULE_INCLUDE_BASE/Fluid/0.10.0 $$QT_MODULE_INCLUDE_BASE/Fluid/0.10.0/Fluid
+QT.Fluid_private.frameworks =
+QT.Fluid_private.depends = Fluid
+QT.Fluid_private.uses =
+QT.Fluid_private.module_config = v2 internal_module
+QT.Fluid_private.enabled_features =
+QT.Fluid_private.disabled_features =

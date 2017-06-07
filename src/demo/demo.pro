@@ -5,6 +5,8 @@ include(demo.pri)
 target.path = $$LIRI_INSTALL_BINDIR
 INSTALLS += target
 
+CONFIG += console
+
 QML_IMPORT_PATH = $$FLUID_BUILD_DIR/qml
 
 android {

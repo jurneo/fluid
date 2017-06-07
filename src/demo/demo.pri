@@ -1,12 +1,20 @@
 TEMPLATE = app
-TARGET = fluid-demo
+TARGET = ui-demo
 
-QT += gui qml quick quickcontrols2
+QT += gui qml quick quickcontrols2 svg
 
-SOURCES += $$PWD/main.cpp
+SOURCES += $$PWD/main.cpp \
+    $$PWD/device.cpp \
+    $$PWD/iconsimageprovider.cpp \
+    $$PWD/iconthemeimageprovider.cpp
 RESOURCES += $$PWD/demo.qrc
 
+INCLUDEPATH += C:/workspace/apps/fluid/src/imports
+LIBS += -LC:/workspace/apps/fluid/qml/Fluid/Core -lfluidcoreplugind
+
 OTHER_FILES += \
+    $$files(qml/core/*.qml) \
+    $$files(qml/controls/*.qml) \
     $$files(qml/*.qml) \
     $$files(qml/+material/*.qml) \
     $$files(qml/+universal/*.qml) \
@@ -16,3 +24,9 @@ OTHER_FILES += \
     $$files(qml/Pages/Layouts/*.qml) \
     $$files(qml/Pages/Material/*.qml) \
     $$files(qml/Pages/Navigation/*.qml)
+
+HEADERS += \
+    $$PWD/device.h \
+    $$PWD/iconsimageprovider.h \
+    $$PWD/iconthemeimageprovider.h
+

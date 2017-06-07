@@ -15,8 +15,8 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
 import QtQuick.Controls.Material 2.0
-import Fluid.Core 1.0
-import Fluid.Controls 1.0
+import "../../core"
+import "../../controls"
 import "../.."
 
 Column {
@@ -25,6 +25,14 @@ Column {
     property int paletteIndex
     property string paletteName
     property color paletteColor
+
+    Utils {
+        id: utils
+    }
+
+    Units {
+        id: units
+    }
 
     spacing: 0
 
@@ -37,10 +45,10 @@ Column {
             anchors {
                 top: parent.top
                 left: parent.left
-                margins: Units.smallSpacing * 2
+                margins: units.smallSpacing * 2
             }
             font.bold: true
-            color: Utils.lightDark(parent.color, blackColor, whiteColor)
+            color: utils.lightDark(parent.color, blackColor, whiteColor)
             text: paletteName
         }
     }
@@ -97,10 +105,10 @@ Column {
                     anchors {
                         left: parent.left
                         verticalCenter: parent.verticalCenter
-                        margins: Units.smallSpacing * 2
+                        margins: units.smallSpacing * 2
                     }
                     font.bold: true
-                    color: Utils.lightDark(parent.color, blackColor, whiteColor)
+                    color: utils.lightDark(parent.color, blackColor, whiteColor)
                     text: model.name
                 }
 
@@ -108,10 +116,10 @@ Column {
                     anchors {
                         right: parent.right
                         verticalCenter: parent.verticalCenter
-                        margins: Units.smallSpacing * 2
+                        margins: units.smallSpacing * 2
                     }
                     font.bold: true
-                    color: Utils.lightDark(parent.color, blackColor, whiteColor)
+                    color: utils.lightDark(parent.color, blackColor, whiteColor)
                     text: parent.color
                 }
             }
@@ -150,10 +158,10 @@ Column {
                     anchors {
                         left: parent.left
                         verticalCenter: parent.verticalCenter
-                        margins: Units.smallSpacing * 2
+                        margins: units.smallSpacing * 2
                     }
                     font.bold: true
-                    color: Utils.lightDark(parent.color, blackColor, whiteColor)
+                    color: utils.lightDark(parent.color, blackColor, whiteColor)
                     text: model.name
                 }
 
@@ -161,10 +169,10 @@ Column {
                     anchors {
                         right: parent.right
                         verticalCenter: parent.verticalCenter
-                        margins: Units.smallSpacing * 2
+                        margins: units.smallSpacing * 2
                     }
                     font.bold: true
-                    color: Utils.lightDark(parent.color, blackColor, whiteColor)
+                    color: utils.lightDark(parent.color, blackColor, whiteColor)
                     text: parent.color
                 }
             }

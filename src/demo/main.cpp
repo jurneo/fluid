@@ -17,6 +17,8 @@
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 #include <QQmlContext>
+#include "core/device.h"
+#define FLUID_LOCAL
 
 #ifdef FLUID_LOCAL
 #  include "../imports/core/iconsimageprovider.h"
@@ -33,6 +35,7 @@ int main(int argc, char *argv[])
     if (QQuickStyle::name().isEmpty())
         QQuickStyle::setStyle(QLatin1String("Material"));
 
+    qmlRegisterType<Device>("Device",1,0,"Device");
     QQmlApplicationEngine engine;
 #ifdef FLUID_LOCAL
     engine.addImportPath(QLatin1String("qrc:/"));
